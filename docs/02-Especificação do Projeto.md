@@ -178,36 +178,13 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`  |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|-------------------------------------|----------------------------------------|
-|Usuário do sistema  | Quero me registrar no site (RF-001) | Para criar uma conta pessoal e         |
-| Lucas Montano      | E também desejo explorar o menu     | encontrar hambúrgueres temáticos       |
-|                    | interativo (RF-002)                 | inspirados em animes.                  |
-|                    |                                     |                                        |
-|Usuário do sistema  | Quero atualizar minhas informações  | Para manter meus dados atualizados ,   |
-| Rafael Ferreira    | de cadastro  (RF-004)               | garantir a segurança da conta e        |
-|                    | Avaliar os hambúrgueres (RF-008)    | compartilhar opiniões sobre os         |
-|                    |                                     | hambúrgueres.                          |
-|                    |                                     |                                        |
-|Usuário do sistema  | Quero buscar lanches de forma       | Para encontrar hambúrgueres            |
-| Ana Torres         | precisa filtrando por nome (RF-005) | relacionados a animes específicos que  |
-|                    | desejo utilizar as APIs de redes    | inspirem meu trabalho de design e      |
-|                    | sociais  para compartilhar          | compartilhar descobertas com  meus     |
-|                    | experiências em minhas redes        | amigos e seguidores.                   |
-|                    | sociais pessoais (RF-011)           |                                        |
-|                    |                                     |                                        |
-|Usuário do sistema  | Quero acompanhar meu progresso nas  | Para manter a motivação para           |
-| Lucas Montano      | missões (RF-006)                    | experimentar novos hambúrgueres        |
-|                    | desejo ser redirecionado para o     | desbloquear prêmios exclusivos         |
-|                    | WhatsApp para um pagamento          | e facilitar o pagamento                |
-|                    | simplificado (RF-010)               |                                        |
-|                    |                                     |                                        |
-|Usuário do sistema  | Quero acessar receitas inspiradas   | Para escolher com mais eficiência      |
-| Isabel Garcia      | em animes (RF-009)                  | qual prato vai agradá-la e sua família,|
-|                    | E também desejo receber e-mails     | e ficar atualizada sobre atividades  e |
-|                    | de lembretes da utilização do       | promoções.                             |
-|                    | aplicativo (RF-007)                 |                                        |
-|--------------------|-------------------------------------|----------------------------------------|
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|--------------------|------------------------------------|----------------------------------------|
+|Lucas Montano       | Quero me registrar no site (RF-001) E também desejo explorar o menu interativo (RF-002)   | Para criar uma conta pessoal e encontrar hambúrgueres temáticos inspirados em animes. |   
+| Rafael Ferreira    | Quero atualizar minhas informações de cadastro, incluindo e-mail e senha (RF-004)  E também desejo avaliar os hambúrgueres (RF-008) | Para manter meus dados atualizados, garantir a segurança da conta e compartilhar opiniões sobre os hambúrgueres.  |
+|Ana Torres          | Quero buscar lanches de forma precisa, filtrando por nome de anime (RF-005), E também desejo utilizar as APIs de redes sociais para compartilhar experiências em minhas redes sociais pessoais (RF-011) |Para encontrar hambúrgueres relacionados a animes específicos que inspirem meu trabalho de design e compartilhar descobertas com meus amigos e seguidores.  |
+|Lucas Montano       |Quero acompanhar meu progresso nas missões (RF-006),desejo ser redirecionado para o WhatsApp para um pagamento simplificado (RF-010)  | Para manter a motivação para experimentar novos hambúrgueres temáticos, desbloquear prêmios exclusivos e facilitar o pagamento.|
+| Isabel Garcia      | Quero acessar receitas inspiradas em animes (RF-009), E também desejo receber e-mails de lembretes da utilização do aplicativo (RF-007)  | Para escolher com mais eficiência qual prato vai agradá-la e sua família, e ficar atualizada sobre atividades e promoções.  | 
 
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
