@@ -183,25 +183,25 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Usuário do sistema  | Quero me registrar no site (RF-001) | Para criar uma conta pessoal e         |
 | Lucas Montano      | E também desejo explorar o menu     | encontrar hambúrgueres temáticos       |
 |                    | interativo (RF-002)                 | inspirados em animes.                  |
-|--------------------|-------------------------------------|----------------------------------------|
+|                    |                                     |                                        |
 |Usuário do sistema  | Quero atualizar minhas informações  | Para manter meus dados atualizados ,   |
 | Rafael Ferreira    | de cadastro  (RF-004)               | garantir a segurança da conta e        |
 |                    | Avaliar os hambúrgueres (RF-008)    | compartilhar opiniões sobre os         |
 |                    |                                     | hambúrgueres.                          |
-|--------------------|-------------------------------------|----------------------------------------|
+|                    |                                     |                                        |
 |Usuário do sistema  | Quero buscar lanches de forma       | Para encontrar hambúrgueres            |
 | Ana Torres         | precisa filtrando por nome (RF-005) | relacionados a animes específicos que  |
 |                    | desejo utilizar as APIs de redes    | inspirem meu trabalho de design e      |
 |                    | sociais  para compartilhar          | compartilhar descobertas com  meus     |
 |                    | experiências em minhas redes        | amigos e seguidores.                   |
 |                    | sociais pessoais (RF-011)           |                                        |
-|--------------------|-------------------------------------|----------------------------------------|
+|                    |                                     |                                        |
 |Usuário do sistema  | Quero acompanhar meu progresso nas  | Para manter a motivação para           |
 | Lucas Montano      | missões (RF-006)                    | experimentar novos hambúrgueres        |
 |                    | desejo ser redirecionado para o     | desbloquear prêmios exclusivos         |
 |                    | WhatsApp para um pagamento          | e facilitar o pagamento                |
 |                    | simplificado (RF-010)               |                                        |
-|--------------------|-------------------------------------|----------------------------------------|
+|                    |                                     |                                        |
 |Usuário do sistema  | Quero acessar receitas inspiradas   | Para escolher com mais eficiência      |
 | Isabel Garcia      | em animes (RF-009)                  | qual prato vai agradá-la e sua família,|
 |                    | E também desejo receber e-mails     | e ficar atualizada sobre atividades  e |
