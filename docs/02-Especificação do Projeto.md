@@ -178,17 +178,17 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                  |
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`  |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|-------------------------------------|----------------------------------------|
 |Usuário do sistema  | Quero me registrar no site (RF-001) | Para criar uma conta pessoal e         |
 | Lucas Montano      | E também desejo explorar o menu     | encontrar hambúrgueres temáticos       |
 |                    | interativo (RF-002)                 | inspirados em animes.                  |
-|--------------------|------------------------------------ |----------------------------------------|
+|--------------------|-------------------------------------|----------------------------------------|
 |Usuário do sistema  | Quero atualizar minhas informações  | Para manter meus dados atualizados ,   |
 | Rafael Ferreira    | de cadastro  (RF-004)               | garantir a segurança da conta e        |
 |                    | Avaliar os hambúrgueres (RF-008)    | compartilhar opiniões sobre os         |
 |                    |                                     | hambúrgueres.                          |
-|--------------------| ------------------------------------|----------------------------------------|
+|--------------------|-------------------------------------|----------------------------------------|
 |Usuário do sistema  | Quero buscar lanches de forma       | Para encontrar hambúrgueres            |
 | Ana Torres         | precisa filtrando por nome (RF-005) | relacionados a animes específicos que  |
 |                    | desejo utilizar as APIs de redes    | inspirem meu trabalho de design e      |
@@ -208,7 +208,6 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |                    | de lembretes da utilização do       | promoções.                             |
 |                    | aplicativo (RF-007)                 |                                        |
 |--------------------|-------------------------------------|----------------------------------------|
-
 
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
