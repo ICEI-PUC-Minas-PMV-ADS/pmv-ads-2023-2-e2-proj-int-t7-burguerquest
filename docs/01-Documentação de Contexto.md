@@ -1,6 +1,6 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Nos dias de hoje, a aplicações web tornaram uma parte essencial no auxílio do ser humano como um todo. Com o avanço da tecnologia e a disseminação da internet, a busca por variedades flexíveis e acessíveis tem crescido substancialmente. Nesse contexto, nosso projeto visa criar uma plataforma alimentícia online que atenda a essa demanda crescente e ofereça uma experiência diferenciada de alta qualidade.
 
 ## Problema
 O problema que o BurguerQuest visa resolver é a desconexão emocional que os entusiastas de animes frequentemente enfrentam ao usar serviços de delivery convencionais. 
