@@ -16,7 +16,7 @@ O fluxo segue da seguinte forma: ao acessar o site, o usuário é direcionado pa
 
 ## Wireframes
 
-https://www.figma.com/proto/0c21HUlwCEiAJgAI9T8dp1/Untitled?type=design&node-id=2-282&t=1TqeNsdLYoBc0qP9-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A282&hotspot-hints=0&mode=design
+https://www.figma.com/proto/0c21HUlwCEiAJgAI9T8dp1/Untitled?type=design&node-id=2-282&t=SgrMPd9gfFsNdMYt-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A282&mode=design
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
  
