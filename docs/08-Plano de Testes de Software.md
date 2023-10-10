@@ -23,10 +23,7 @@ Por exemplo:
 
 Os testes funcionais a serem realizados no site são descritos na seguinte planilha https://sgapucminasbr-my.sharepoint.com/:x:/g/personal/1454955_sga_pucminas_br/EW5dHb9CsdtOj540XjB8FwkBVWNyjD-BRTTG1FyhalEkaQ?e=5fdebf
 
-<div align="center">
-  <img src="img/plano de testes de softer (1).pdf">
-
-
+![plano de testes](docs/img/plano de testes.png)
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
