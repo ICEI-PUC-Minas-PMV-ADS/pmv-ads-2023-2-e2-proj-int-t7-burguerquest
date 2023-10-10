@@ -28,10 +28,14 @@ Tarefas:
 
 Após os participantes concluirem as tarefas solicitas será fornecido um formulario para que  preencham e avalie o site
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/blob/a4e65e0d1ce26c24274f74de1f62552feb3039ee/docs/img/formulario01.png)
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/blob/a4e65e0d1ce26c24274f74de1f62552feb3039ee/docs/img/formulario02.png)
+ 
+
+O formulario a serem realizados são descritos no seguinte link https://forms.gle/tBrAvoo7AKVe3kFn7
   
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
 
 > **Links Úteis**:
 > - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
