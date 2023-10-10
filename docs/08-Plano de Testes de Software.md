@@ -21,9 +21,8 @@ Por exemplo:
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
 
-Os testes funcionais a serem realizados no site são descritos na seguinte planilha https://sgapucminasbr-my.sharepoint.com/:x:/g/personal/1454955_sga_pucminas_br/EW5dHb9CsdtOj540XjB8FwkBVWNyjD-BRTTG1FyhalEkaQ?e=5fdebf
 
-![plano de testes](docs/img/plano de testes.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/blob/4304fb129fdf1f61a1e9706afe5b597951eb353b/docs/img/plano%20de%20testes.png)
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
