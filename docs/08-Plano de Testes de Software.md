@@ -21,6 +21,12 @@ Por exemplo:
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
 
+Os testes funcionais a serem realizados no site são descritos na seguinte planilha https://sgapucminasbr-my.sharepoint.com/:x:/g/personal/1454955_sga_pucminas_br/EW5dHb9CsdtOj540XjB8FwkBVWNyjD-BRTTG1FyhalEkaQ?e=5fdebf
+
+<div align="center">
+  <img src="img/plano de testes de softer (1).pdf">
+
+
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
