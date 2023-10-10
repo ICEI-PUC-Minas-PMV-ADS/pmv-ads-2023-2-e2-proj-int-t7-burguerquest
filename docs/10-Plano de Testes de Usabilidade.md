@@ -1,10 +1,35 @@
 # Plano de Testes de Usabilidade
 
-Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
+Objetivo do Teste de Usabilidade: 
 
-Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos (em função dos requisitos levantados/implementados), dos critérios que serão utilizados para a seleção dos participantes, dos procedimentos a serem adotados pelos condutores de teste (por exemplo: os testes serão presenciais ou remotos? o método será observação direta, medição ou avaliação?), das tarefas a serem executadas, dos dados a serem coletados (quantidade de cliques, número de erros, tempo etc.), a ordem de execução das tarefas e das etapas da sessão de teste, recursos demandados, métricas coletadas etc.
+O objetivo deste teste é avaliar a usabilidade do aplicativo Burguer Quest, que oferece hambúrgueres temáticos inspirados em animes para o público jovem e entusiasta. 
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
+Instruções repassadas para os Participantes: 
+
+Você é um cliente em potencial do Burguer Quest, um restaurante temático de animes. Sua tarefa é explorar o aplicativo e realizar uma série de ações específicas. Por favor, pense em voz alta enquanto realiza as tarefas e compartilhe suas impressões e dificuldades durante o processo. 
+
+Tarefas: 
+
+1. Encontrar o Cardápio: Abra o aplicativo e encontre a seção do cardápio. Escolha um hambúrguer temático e adicione-o ao seu carrinho de compras.
+2. Localizar Informações de Contato: Descubra como entrar em contato com o Burguer Quest em caso de dúvidas ou problemas. Anote o número de telefone e o endereço de e-mail.
+3. Explorar o Programa de Fidelidade: Encontre informações sobre o programa de fidelidade do Burguer Quest. Descubra como ele funciona e quais são os benefícios oferecidos aos clientes.
+4. Fazer um Pedido: Faça um pedido de um hambúrguer temático de sua escolha.
+5.  faça login e tente alterar suas informações de cadastro. Depois de realizar o login veja se o site permitirá realizar alterações de cadastro.
+6.   Avaliar pedidos. Após realizar pedidos, verificar se é possível deixar avaliação para o mesmo
+
+ Métricas de Avaliação: 
+
+ 1. Eficácia: Mediremos se os participantes conseguem concluir cada tarefa com sucesso, registrando o tempo gasto e os cliques necessários.
+ 2. Eficiência: Avaliaremos a eficiência das ações dos participantes, incluindo a facilidade de navegação e a capacidade de encontrar informações rapidamente.
+ 3. Satisfação do Usuário: Coletaremos feedback subjetivo dos participantes sobre a experiência geral de uso do aplicativo, incluindo a estética, a facilidade de uso e o grau de satisfação.
+
+
+1. Apresentação Inicial: Explicaremos aos participantes o objetivo do teste e as tarefas que serão realizadas.
+
+Após os participantes concluirem as tarefas solicitas será fornecido um formulario para que  preencham e avalie o site
+
+
+  
 
 As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
 
