@@ -1,0 +1,16 @@
+usando o mysql tem que baixar e instalar na maquina
+
+downloads
+https://dev.mysql.com/downloads/mysql/ 
+e
+https://dev.mysql.com/downloads/workbench/
+na hora de instalar use a mesma senha que eu ou vc vai precisar alterar na conection string
+(Ingrid1202!)
+
+depois pra criar o banco de dados use os comandos no terminal
+
+1. dotnet ef migrations add CreateIdentitySchema
+
+2. dotnet ef migrations add InitialCreate --context AppDbContext
+
+3. dotnet ef database update -c ApplicationDbContext

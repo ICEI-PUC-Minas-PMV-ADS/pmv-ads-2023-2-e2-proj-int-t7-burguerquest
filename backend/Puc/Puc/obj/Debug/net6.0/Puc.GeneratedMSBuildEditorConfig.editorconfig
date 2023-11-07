@@ -1,0 +1,89 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Puc
+build_property.RootNamespace = Puc
+build_property.ProjectDir = /Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = /Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b3MvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b3MvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b3MvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b3MvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b3MvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/brunocomassetto/Documents/Bruno`s apps/PUC/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-rmx145945n
