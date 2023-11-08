@@ -15,6 +15,8 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 //builder.Services.AddDbContext<AppDbContext>(options =>
 //    options.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection)));
 
+//ATENCAO PARA MUDAR O BANCO PARA O AZURE TEM QUE MUDAR ISSO AQUI E O APPSETINGS.JSON
+
 string mySqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<AppDbContext>(options =>

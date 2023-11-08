@@ -17,7 +17,7 @@ namespace Puc.Models
         public decimal Preco { get; set; }
 
         [Display(Name = "Url")]
-        [StringLength(30)]
+        [StringLength(300)]
         public string Imageurl { get; set; }
 
     }

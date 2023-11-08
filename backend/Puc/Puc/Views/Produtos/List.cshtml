@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Puc.Models.Produto>
+
+@{
+    ViewData["Title"] = "List";
+}
+
+
+
+
+<div>
+    <h1>Nossos Lanches</h1>
+</div>
+
+@foreach (var item in Model)
+{
+        <div>
+            <h4>Lanche : @Html.DisplayFor(modelItem => item.NomeProduto)</h4>
+            <p><img  style="width:480px;height:400px;" src="@Html.DisplayFor(modelItem => item.Imageurl)" /> </p>
+            <p>Preço: @Html.DisplayFor(modelItem => item.Preco)</p>
+        </div>
+}

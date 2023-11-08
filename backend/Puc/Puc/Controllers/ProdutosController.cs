@@ -18,6 +18,16 @@ namespace Puc.Controllers
             _context = context;
         }
 
+
+        //tentativa de lista dos lanches
+
+        public async Task<IActionResult> List()
+        {
+            return _context.Produtos != null ?
+                        View(await _context.Produtos.ToListAsync()) :
+                        Problem("Entity set 'AppDbContext.Produtos'  is null.");
+        }
+
         // GET: Produtos
         public async Task<IActionResult> Index()
         {

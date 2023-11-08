@@ -1,35 +1,23 @@
 ﻿<Properties StartupConfiguration="{387177BB-C2D1-4E33-AB0D-B6968AC3E1A9}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Puc PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Puc/Properties/launchSettings.json">
-    <Files>
-      <File FileName="Puc/appsettings.json" Line="12" Column="1" />
-      <File FileName="Puc/Program.cs" Line="1" Column="1" />
-      <File FileName="Puc/Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="Puc/Models/ErrorViewModel.cs" Line="1" Column="1" />
-      <File FileName="Puc/Properties/launchSettings.json" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Puc" expanded="True">
             <Node name="Puc" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True">
-                <Node name="launchSettings.json" selected="True" />
-              </Node>
-              <Node name="Views" expanded="True" />
-              <Node name="wwwroot" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Puc FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
