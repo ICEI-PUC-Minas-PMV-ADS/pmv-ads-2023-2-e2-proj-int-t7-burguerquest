@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore.Design;
 using Puc.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +12,10 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
+
+
+
+
 //string mySqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
 
 //builder.Services.AddDbContext<AppDbContext>(options =>
@@ -17,11 +23,13 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 //ATENCAO PARA MUDAR O BANCO PARA O AZURE TEM QUE MUDAR ISSO AQUI E O APPSETINGS.JSON
 
-string mySqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
+//string mySqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-                    options.UseMySql(mySqlConnection,
-                    ServerVersion.AutoDetect(mySqlConnection)));
+//builder.Services.AddDbContext<AppDbContext>(options =>
+//                    options.UseMySql(mySqlConnection,
+//                    ServerVersion.AutoDetect(mySqlConnection)));
+
+
 
 //builder.Services.Configure<CookiePolicyOptions>(options =>
 //{
@@ -37,7 +45,23 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 //    });
 
 
+
+var connection = String.Empty;
+if (builder.Environment.IsDevelopment())
+{
+    builder.Configuration.AddEnvironmentVariables().AddJsonFile("appsettings.Development.json");
+    connection = builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING");
+}
+else
+{
+    connection = Environment.GetEnvironmentVariable("AZURE_SQL_CONNECTIONSTRING");
+}
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(connection));
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
