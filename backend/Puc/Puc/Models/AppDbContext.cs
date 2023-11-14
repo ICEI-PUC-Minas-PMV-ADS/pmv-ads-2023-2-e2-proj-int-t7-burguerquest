@@ -1,9 +1,12 @@
 ﻿using System;
 using Puc.Controllers;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+
 namespace Puc.Models
 {
-	public class AppDbContext : DbContext
+	public class AppDbContext : IdentityDbContext<IdentityUser>
 	{
 
 		public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
@@ -12,6 +15,7 @@ namespace Puc.Models
 
         public DbSet<Usuario> Usuarios { get; set; }
 
+       
     }
 }
 

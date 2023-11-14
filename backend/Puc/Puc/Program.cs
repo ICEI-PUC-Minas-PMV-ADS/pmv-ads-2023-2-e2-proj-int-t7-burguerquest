@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore.Design;
 using Puc.Models;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,18 +32,18 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 
 
-//builder.Services.Configure<CookiePolicyOptions>(options =>
-//{
-//    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-//    options.CheckConsentNeeded = context => true;
-//    options.MinimumSameSitePolicy = SameSiteMode.None;
-//});
+builder.Services.Configure<CookiePolicyOptions>(options =>{
+    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+    options.CheckConsentNeeded = context => true;
+    options.MinimumSameSitePolicy = SameSiteMode.None;
+});
 
-//builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-//    .AddCookie(options => {
-//        options.AccessDeniedPath = "/Usuarios/AccessDenied/";
-//        options.LoginPath = "/Usuarios/Login/";
-//    });
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.AccessDeniedPath = "/Usuarios/AccessDenied/";
+        options.LoginPath = "/Usuarios/Login/";
+    });
 
 
 
@@ -60,6 +61,10 @@ else
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connection));
 
+//builder.Services.AddIdentity<ApplicationUser, Microsoft.AspNetCore.Identity.IdentityRole>()
+//    .AddEntityFrameworkStores<AppDbContext>()
+//    .AddDefaultTokenProviders();
+
 var app = builder.Build();
 
 
@@ -76,6 +81,9 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseCookiePolicy();
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

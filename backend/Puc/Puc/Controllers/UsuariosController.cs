@@ -1,7 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -19,11 +23,12 @@ namespace Puc.Controllers
         }
 
         // GET: Usuarios
+
         public async Task<IActionResult> Index()
         {
-              return _context.Usuarios != null ? 
-                          View(await _context.Usuarios.ToListAsync()) :
-                          Problem("Entity set 'AppDbContext.Usuarios'  is null.");
+            return _context.Usuarios != null ?
+                        View(await _context.Usuarios.ToListAsync()) :
+                        Problem("Entity set 'AppDbContext.Usuarios'  is null.");
         }
 
         // GET: Usuarios/Details/5
@@ -45,6 +50,7 @@ namespace Puc.Controllers
         }
 
         // GET: Usuarios/Create
+        [AllowAnonymous]
         public IActionResult Create()
         {
             return View();
@@ -55,10 +61,12 @@ namespace Puc.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AllowAnonymous]
         public async Task<IActionResult> Create([Bind("Id,Nome,Senha,Perfil,Endereco,Telefone")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
+                usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -98,6 +106,7 @@ namespace Puc.Controllers
             {
                 try
                 {
+                    usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                     _context.Update(usuario);
                     await _context.SaveChangesAsync();
                 }
@@ -149,14 +158,71 @@ namespace Puc.Controllers
             {
                 _context.Usuarios.Remove(usuario);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool UsuarioExists(int id)
         {
-          return (_context.Usuarios?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Usuarios?.Any(e => e.Id == id)).GetValueOrDefault();
+        }
+
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login([Bind("Nome, Senha")] Usuario usuario)
+        {
+            var user = await _context.Usuarios
+                .FirstOrDefaultAsync(m => m.Nome == usuario.Nome);
+
+            if (user == null || !BCrypt.Net.BCrypt.Verify(usuario.Senha, user.Senha))
+            {
+                ViewBag.Message = "Usuário e/ou Senha inválidos!";
+                return View();
+            }
+
+            var claims = new ClaimsIdentity(new[]
+            {
+            new Claim(ClaimTypes.Name, user.Nome),
+            new Claim(ClaimTypes.NameIdentifier, user.Nome),
+            new Claim(ClaimTypes.Role, user.Perfil.ToString())
+        }, "login");
+
+            var principal = new ClaimsPrincipal(claims);
+
+            var authProperties = new AuthenticationProperties
+            {
+                AllowRefresh = true,
+                ExpiresUtc = DateTime.Now.ToLocalTime().AddDays(7),
+                IsPersistent = true
+            };
+
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, authProperties);
+
+            return RedirectToAction("Index", "Home"); // Substitua "Index" e "Home" pelos seus valores reais
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Index", "Home"); // Substitua "Index" e "Home" pelos seus valores reais
         }
     }
+
+
+
 }
+
+
+        

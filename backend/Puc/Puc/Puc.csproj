@@ -24,5 +24,20 @@
     </PackageReference>
     <PackageReference Include="Azure.Identity" Version="1.10.3" />
     <PackageReference Include="Azure.Core" Version="1.35.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.24" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="ViewModel\" />
+    <None Remove="Views\Account\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
+    <Folder Include="Views\Account\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20231113115123_Identity.cs" />
+    <Compile Remove="Migrations\20231113115123_Identity.Designer.cs" />
+    <Compile Remove="Controllers\AccountController.cs" />
   </ItemGroup>
 </Project>
