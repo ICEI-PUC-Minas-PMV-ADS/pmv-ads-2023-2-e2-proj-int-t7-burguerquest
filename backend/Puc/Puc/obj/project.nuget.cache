@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iNJW6M0RAG0si8bardpWd0zstlXlGCx00Q/UkBVBcNADEZ2qj8jiSgbzjeQ+/xjdA6CIQ9codjFl2QQDWSsb9Q==",
+  "dgSpecHash": "5woYCsN/LqEeAzbmKvyXi9Ltj1TdJBAH9Lv7BYWpZL8LJ2JPMiJTdoRqkCw21Vbr7HrnR3V8f82Whwg1Rz9X5A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aleander\\Desktop\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest-main\\backend\\Puc\\Puc\\Puc.csproj",
+  "projectFilePath": "C:\\Users\\Aleander\\Desktop\\Projeto\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\Puc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aleander\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Aleander\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

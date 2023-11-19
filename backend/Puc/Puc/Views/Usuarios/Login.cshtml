@@ -1,13 +1,13 @@
 ﻿@model Puc.Models.Usuario
 
-
 @{
     ViewData["Title"] = "Login";
 }
 
+<link rel="stylesheet" href="~/css/login.css" />
+
 <h2>@ViewData["Title"]</h2>
 
-<h2>Login</h2>
 <hr />
 
 @if (!string.IsNullOrEmpty(ViewBag.Message))
@@ -30,6 +30,3 @@
 
     <button type="submit" class="btn btn-primary">Login</button>
 </form>
-
-
-

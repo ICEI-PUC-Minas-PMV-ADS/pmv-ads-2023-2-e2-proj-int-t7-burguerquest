@@ -12320,11 +12320,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aleander\\Desktop\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest-main\\backend\\Puc\\Puc\\Puc.csproj",
+      "projectUniqueName": "C:\\Users\\Aleander\\Desktop\\Projeto\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\Puc.csproj",
       "projectName": "Puc",
-      "projectPath": "C:\\Users\\Aleander\\Desktop\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest-main\\backend\\Puc\\Puc\\Puc.csproj",
+      "projectPath": "C:\\Users\\Aleander\\Desktop\\Projeto\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\Puc.csproj",
       "packagesPath": "C:\\Users\\Aleander\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aleander\\Desktop\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest-main\\backend\\Puc\\Puc\\obj\\",
+      "outputPath": "C:\\Users\\Aleander\\Desktop\\Projeto\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aleander\\AppData\\Roaming\\NuGet\\NuGet.Config",

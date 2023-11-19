@@ -1,0 +1,81 @@
+﻿/* home.css */
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.text-center {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.display-4 {
+    color: #ff9933;
+}
+
+.lead {
+    font-style: italic;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.mt-5 {
+    margin-top: 30px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 5px #333;
+}
+
+.lead::before {
+    content: '\00BB'; /* Adiciona uma seta na frente do texto */
+    margin-right: 5px;
+}
+
+/* Estilo do rodapé */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Cor de fundo para a faixa no rodapé */
+    padding: 5px; /* Ajusta o padding da faixa no rodapé */
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 70%; /* Tamanho da fonte reduzido para 70% do tamanho original */
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+    .footer h2 {
+        font-size: 80%; /* Tamanho da fonte para os títulos h2 dentro do rodapé */
+        margin-bottom: 5px; /* Reduz o espaço abaixo dos títulos */
+    }
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15px; /* Adiciona um pequeno espaço entre as colunas */
+}
+
+/* Estilo adicional para destacar a frase no rodapé */
+.highlighted-text {
+    font-size: 120%; /* Aumenta o tamanho da fonte para destacar */
+    font-weight: bold; /* Torna o texto em negrito para maior destaque */
+    color: #e44d26; /* Cor de destaque - você pode ajustar conforme necessário */
+    margin-bottom: 5px; /* Reduz o espaço abaixo da frase destacada */
+}
+
+/* Adicione mais estilos conforme necessário */

@@ -1,9 +1,47 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="css/home.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- Restante do seu conteúdo HTML -->
+    <div class="text-center">
+        <h1 class="display-4">BurguerQuest </h1>
+        <p class="lead">O lugar perfeito para os amantes de animes e bons hamburguers!</p>
 
-<div class="text-center">
-    <h1 class="display-4">Projeto Puc</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <p>Nossos hamburguers são inspirados nos personagens e mundos dos seus animes favoritos.</p>
+                <p>Desfrute de uma experiência única que combina a cultura anime com deliciosos sabores.</p>
+            </div>
+        </div>
+        <img src="imagens/personagem_home.png" alt="Descrição da Imagem">
+        <!-- Adicionando a classe de destaque à frase -->
+        <p class="mt-5 highlighted-text">Faça seu pedido agora e embarque nesta jornada gastronômica!</p>
+    </div>
 
+    <div class="footer">
+        <div class="footer-column">
+            <h2 class="display-5">Informações de Contato</h2>
+            <address>
+                Endereço: Rua da Imaginação, 123 - Animeville
+            </address>
+            <p>Telefone: (11) 1234-5678 / (11) 9876-5432</p>
+        </div>
+
+        <div class="footer-column">
+            <h2 class="display-5">E-mail</h2>
+            <p>contato@burguerquest.com</p>
+        </div>
+
+        <div class="footer-column">
+            <h2 class="display-5">Horário de Funcionamento</h2>
+            <p>Qui à Dom - 17h às 23:30</p>
+        </div>
+
+        <p>&copy; 2023 BurguerQuest. Todos os direitos reservados. <a href="#">Privacy</a></p>
+    </div>
+</body>
+</html>

@@ -1,9 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using System;
 using Puc.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -33,7 +29,8 @@ else
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connection));
 
-builder.Services.Configure<CookiePolicyOptions>(options => {
+builder.Services.Configure<CookiePolicyOptions>(options =>
+{
     options.CheckConsentNeeded = context => true;
     options.MinimumSameSitePolicy = SameSiteMode.None;
 });
