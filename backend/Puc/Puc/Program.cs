@@ -1,51 +1,23 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 using Puc.Models;
-using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+// Configurar o IDistributedCache
+builder.Services.AddDistributedMemoryCache(); // Configuração para armazenamento em memória. Troque por outra implementação conforme necessário.
 
-builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
-
-
-
-
-
-//string mySqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
-
-//builder.Services.AddDbContext<AppDbContext>(options =>
-//    options.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection)));
-
-//ATENCAO PARA MUDAR O BANCO PARA O AZURE TEM QUE MUDAR ISSO AQUI E O APPSETINGS.JSON
-
-//string mySqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
-
-//builder.Services.AddDbContext<AppDbContext>(options =>
-//                    options.UseMySql(mySqlConnection,
-//                    ServerVersion.AutoDetect(mySqlConnection)));
-
-
-
-builder.Services.Configure<CookiePolicyOptions>(options =>{
-    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-    options.CheckConsentNeeded = context => true;
-    options.MinimumSameSitePolicy = SameSiteMode.None;
+// Configuração da sessão
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Defina o tempo limite da sessão conforme necessário
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
 });
-
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options =>
-    {
-        options.AccessDeniedPath = "/Usuarios/AccessDenied/";
-        options.LoginPath = "/Usuarios/Login/";
-    });
-
-
 
 var connection = String.Empty;
 if (builder.Environment.IsDevelopment())
@@ -61,18 +33,27 @@ else
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connection));
 
-//builder.Services.AddIdentity<ApplicationUser, Microsoft.AspNetCore.Identity.IdentityRole>()
-//    .AddEntityFrameworkStores<AppDbContext>()
-//    .AddDefaultTokenProviders();
+builder.Services.Configure<CookiePolicyOptions>(options => {
+    options.CheckConsentNeeded = context => true;
+    options.MinimumSameSitePolicy = SameSiteMode.None;
+});
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.AccessDeniedPath = "/Usuarios/AccessDenied/";
+        options.LoginPath = "/Usuarios/Login/";
+    });
+
+builder.Services.AddAuthorization(); // Adicionando o serviço de autorização
+
+builder.Services.AddControllersWithViews(); // Adicionar os controllers
 
 var app = builder.Build();
 
-
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -81,14 +62,18 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseSession(); // Adicionar uso da sessão antes da autenticação e autorização
+
 app.UseCookiePolicy();
 
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+});
 
 app.Run();
-

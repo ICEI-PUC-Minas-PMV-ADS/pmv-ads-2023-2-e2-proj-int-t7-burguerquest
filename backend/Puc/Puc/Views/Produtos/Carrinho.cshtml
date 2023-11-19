@@ -1,0 +1,61 @@
+﻿@model Tuple<List<Puc.Models.Produto>, Puc.Models.Usuario>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Itens no Carrinho</title>
+    <link rel="stylesheet" href="~/css/carrinho.css">
+</head>
+<body>
+    <h1>Itens no Carrinho</h1>
+
+    <div class="user-details">
+        <h2>Detalhes do Usuário:</h2>
+        <p>Nome do Usuário: @Model.Item2.Nome</p>
+        <p>Endereço: <input type="text" value="@Model.Item2.Endereco" /></p>
+        <p>Telefone: <input type="text" value="@Model.Item2.Telefone" /></p>
+    </div>
+
+    @if (Model.Item1.Count > 0)
+    {
+        foreach (var item in Model.Item1)
+        {
+            <div class="item">
+                <h4>Lanche: @item.NomeProduto</h4>
+                <p><img src="@item.Imageurl" /></p>
+                <p>Preço: @item.Preco</p>
+                <form asp-controller="Produtos" asp-action="RemoverDoCarrinho" method="post">
+                    <input type="hidden" name="produtoId" value="@item.ProdutoId" />
+                    <button type="submit" class="remove-button">Remover do Carrinho</button>
+                </form>
+            </div>
+        }
+    }
+    else
+    {
+        <p>Nenhum item no carrinho ainda.</p>
+    }
+
+    <!-- Opções de pagamento -->
+    <div class="payment-options">
+        <h2>Opções de Pagamento</h2>
+        <label>
+            <input type="radio" name="payment" value="credito">
+            Cartão de Crédito
+        </label><br>
+        <label>
+            <input type="radio" name="payment" value="debito">
+            Cartão de Débito
+        </label><br>
+        <label>
+            <input type="radio" name="payment" value="pix">
+            PIX
+        </label><br>
+    </div>
+
+    <!-- Botão para finalizar pedido -->
+    <button class="checkout-button">Finalizar Pedido</button>
+
+</body>
+</html>

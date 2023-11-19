@@ -69,10 +69,16 @@ namespace Puc.Controllers
                 usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+
+                // Redirecionar para a página inicial (Home)
+                return RedirectToAction("Login", "Usuarios"); // Redireciona para a Home
+
+                // Se preferir redirecionar para a Action específica dentro da Home (por exemplo, para uma ação chamada 'Inicio'):
+                // return RedirectToAction("Inicio", "Home");
             }
             return View(usuario);
         }
+
 
         // GET: Usuarios/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -218,6 +224,23 @@ namespace Puc.Controllers
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Index", "Home"); // Substitua "Index" e "Home" pelos seus valores reais
         }
+
+        public async Task<IActionResult> DetalhesUsuarioLogado()
+        {
+            // Obter o nome do usuário autenticado
+            var nomeUsuario = User.Identity.Name;
+
+            // Buscar o usuário pelo nome no banco de dados
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Nome == nomeUsuario);
+
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+
+            return View("Details", usuario); // Exibir os detalhes do usuário logado
+        }
+
     }
 
 

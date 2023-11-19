@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +14,7 @@ namespace Puc.Controllers
     public class ProdutosController : Controller
     {
         private readonly AppDbContext _context;
+        private List<int> carrinho = new List<int>(); // Armazena índices dos itens no carrinho
 
         public ProdutosController(AppDbContext context)
         {
@@ -23,17 +26,16 @@ namespace Puc.Controllers
 
         public async Task<IActionResult> List()
         {
-            return _context.Produtos != null ?
-                        View(await _context.Produtos.ToListAsync()) :
-                        Problem("Entity set 'AppDbContext.Produtos'  is null.");
+            var produtos = await _context.Produtos.ToListAsync();
+            return View(produtos);
         }
 
         // GET: Produtos
         public async Task<IActionResult> Index()
         {
-              return _context.Produtos != null ? 
-                          View(await _context.Produtos.ToListAsync()) :
-                          Problem("Entity set 'AppDbContext.Produtos'  is null.");
+            return _context.Produtos != null ?
+                        View(await _context.Produtos.ToListAsync()) :
+                        Problem("Entity set 'AppDbContext.Produtos'  is null.");
         }
 
         // GET: Produtos/Details/5
@@ -159,14 +161,58 @@ namespace Puc.Controllers
             {
                 _context.Produtos.Remove(produto);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ProdutoExists(int id)
         {
-          return (_context.Produtos?.Any(e => e.ProdutoId == id)).GetValueOrDefault();
+            return (_context.Produtos?.Any(e => e.ProdutoId == id)).GetValueOrDefault();
         }
+
+        public async Task<IActionResult> CarrinhoAsync()
+        {
+            var carrinho = HttpContext.Session.Get<List<int>>("Carrinho") ?? new List<int>();
+
+            var produtosNoCarrinho = new List<Produto>();
+            foreach (var indice in carrinho)
+            {
+                var produto = _context.Produtos.ToList()[indice]; // Busca o produto pelo índice
+                produtosNoCarrinho.Add(produto);
+            }
+
+            var usuarioLogado = await _context.Usuarios.FirstOrDefaultAsync(u => u.Nome == User.Identity.Name);
+
+            var model = new Tuple<List<Produto>, Usuario>(produtosNoCarrinho, usuarioLogado);
+
+            return View(model);
+        }
+
+        public IActionResult AdicionarAoCarrinho(int indice)
+        {
+            var carrinho = HttpContext.Session.Get<List<int>>("Carrinho") ?? new List<int>();
+            carrinho.Add(indice);
+            HttpContext.Session.Set("Carrinho", carrinho);
+
+            return RedirectToAction(nameof(List));
+        }
+        public IActionResult RemoverDoCarrinho(int produtoId)
+        {
+            var carrinho = HttpContext.Session.Get<List<int>>("Carrinho") ?? new List<int>();
+
+            // Verifica se o produtoId está presente no carrinho e remove se encontrado
+            if (carrinho.Contains(produtoId))
+            {
+                carrinho.Remove(produtoId);
+                HttpContext.Session.Set("Carrinho", carrinho);
+            }
+
+            // Redireciona para a mesma página (CarrinhoAsync) para atualizar a exibição
+
+            return RedirectToAction("Carrinho", "Produtos");
+        }
+
+
     }
 }

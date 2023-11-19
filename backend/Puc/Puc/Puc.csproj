@@ -32,12 +32,21 @@
     <None Remove="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ViewModel\" />
     <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Remove="Controllers\DetalhesPedido.cs" />
+    <Compile Remove="Controllers\PedidoController.cs" />
     <Compile Remove="Migrations\20231113115123_Identity.cs" />
     <Compile Remove="Migrations\20231113115123_Identity.Designer.cs" />
     <Compile Remove="Controllers\AccountController.cs" />
+    <Compile Remove="ViewModel\CarrinhoUsuarioViewModel.cs" />
+    <Compile Remove="Views\Produtos\Carrinho.cshtml.cs" />
+    <Compile Remove="Views\Produtos\Class.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Produtos\Create - Cópia.cshtml" />
+    <Content Remove="Views\Produtos\List - Cópia.cshtml" />
+    <Content Remove="wwwroot\css\site - Cópia.css" />
   </ItemGroup>
 </Project>
