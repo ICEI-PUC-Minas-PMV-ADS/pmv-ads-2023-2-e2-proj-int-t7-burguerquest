@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uDXk3vQGLbZ2MUE8LkgfpD24ieC4t2KHZaAMxBOcyhk=",
+  "Hash": "CkStB3LuGpZzyR/Co/NXIsdOCNYUDS5fepYUfFPF45s=",
   "Source": "Puc",
   "BasePath": "_content/Puc",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\cadastro.css"
+    },
+    {
+      "Identity": "C:\\Users\\Aleander\\Desktop\\Projeto\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\wwwroot\\css\\cardapio.css",
+      "SourceId": "Puc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Aleander\\Desktop\\Projeto\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\wwwroot\\",
+      "BasePath": "_content/Puc",
+      "RelativePath": "css/cardapio.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\cardapio.css"
     },
     {
       "Identity": "C:\\Users\\Aleander\\Desktop\\Projeto\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\wwwroot\\css\\carrinho.css",

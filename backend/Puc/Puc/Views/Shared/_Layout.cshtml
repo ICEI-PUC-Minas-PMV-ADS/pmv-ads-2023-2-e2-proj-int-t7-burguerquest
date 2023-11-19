@@ -32,7 +32,7 @@
 
 
 
-                        @if (User.IsInRole("Admin") == true )
+                        @if (User.IsInRole("Admin"))
         {
 
                         <li class="nav-item">
@@ -52,9 +52,11 @@
 
                         @if (User.Identity.IsAuthenticated)
         {
-                        <li class="nav-item">
-                            Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
-                        </li>
+                            <form asp-controller="Usuarios" asp-action="Logout" method="post">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="nav-link text-dark" style="background:none; border:none; padding:0; margin:0;">Sair</button>
+                            </form>
+
         }
         else
         {

@@ -1,0 +1,58 @@
+﻿/* wwwroot/css/cardapio.css */
+
+.cardapio-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.cardapio-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 80%; /* Ajuste a largura do card conforme necessário */
+}
+
+    .card img {
+        width: 200px; /* Ajuste o tamanho da imagem aqui */
+        height: auto;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-right: 20px;
+    }
+
+.item-details {
+    flex: 1;
+}
+
+    .item-details h4 {
+        color: #ff6f61;
+        margin-bottom: 5px;
+    }
+
+    .item-details p {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .item-details input[type="submit"] {
+        background-color: #ff6f61;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+        .item-details input[type="submit"]:hover {
+            background-color: #e04e42;
+        }

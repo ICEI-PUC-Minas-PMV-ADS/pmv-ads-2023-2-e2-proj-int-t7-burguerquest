@@ -1,5 +1,4 @@
-﻿@model Tuple<List<Puc.Models.Produto>, Puc.Models.Usuario>
-
+﻿@model CarrinhoViewModel
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,23 +9,26 @@
 <body>
     <h1>Itens no Carrinho</h1>
 
-    <div class="user-details">
-        <h2>Detalhes do Usuário:</h2>
-        <p>Nome do Usuário: @Model.Item2.Nome</p>
-        <p>Endereço: <input type="text" value="@Model.Item2.Endereco" /></p>
-        <p>Telefone: <input type="text" value="@Model.Item2.Telefone" /></p>
-    </div>
+<div class="user-details">
+    <h2>Detalhes do Usuário:</h2>
+    <p>Nome do Usuário: @Model.Usuario.Nome</p>
+    <p>Endereço: <input type="text" value="@Model.Usuario.Endereco" /></p>
+    <p>Telefone: <input type="text" value="@Model.Usuario.Telefone" /></p>
+</div>
 
-    @if (Model.Item1.Count > 0)
+    @if (Model.ProdutosComIndices.Count > 0)
     {
-        foreach (var item in Model.Item1)
+        @foreach (var tuple in Model.ProdutosComIndices)
         {
+            var produto = tuple.Item1;
+            var indice = tuple.Item2;
+
             <div class="item">
-                <h4>Lanche: @item.NomeProduto</h4>
-                <p><img src="@item.Imageurl" /></p>
-                <p>Preço: @item.Preco</p>
+                <h4>Lanche: @produto.NomeProduto</h4>
+                <p><img src="@produto.Imageurl" /></p>
+                <p>Preço: @produto.Preco</p>
                 <form asp-controller="Produtos" asp-action="RemoverDoCarrinho" method="post">
-                    <input type="hidden" name="produtoId" value="@item.ProdutoId" />
+                    <input type="hidden" name="indice" value="@indice" />
                     <button type="submit" class="remove-button">Remover do Carrinho</button>
                 </form>
             </div>
@@ -54,8 +56,23 @@
         </label><br>
     </div>
 
-    <!-- Botão para finalizar pedido -->
-    <button class="checkout-button">Finalizar Pedido</button>
+    <button id="checkout-button" class="checkout-button">Finalizar Pedido</button>
+
+    <script>
+        // Captura o botão de finalizar pedido
+        const checkoutButton = document.getElementById('checkout-button');
+
+        // Adiciona um evento de clique ao botão
+        checkoutButton.addEventListener('click', function () {
+            // Simula o processo de finalização do pedido (pode ser sua lógica real aqui)
+
+            // Exibe um alerta com a mensagem de confirmação
+            alert('Pedido finalizado. Será entregue entre 50 minutos a 1 hora.');
+
+            // Redireciona para a página inicial após o alerta
+            window.location.href = '/Home/Index'; // Altere o redirecionamento conforme necessário
+        });
+    </script>
 
 </body>
 </html>

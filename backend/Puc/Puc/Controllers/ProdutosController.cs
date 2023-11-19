@@ -1,4 +1,11 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Puc.Models;
 
@@ -163,24 +170,28 @@ namespace Puc.Controllers
         {
             return (_context.Produtos?.Any(e => e.ProdutoId == id)).GetValueOrDefault();
         }
-
         public async Task<IActionResult> CarrinhoAsync()
         {
             var carrinho = HttpContext.Session.Get<List<int>>("Carrinho") ?? new List<int>();
 
-            var produtosNoCarrinho = new List<Produto>();
+            var produtosNoCarrinho = new List<Tuple<Produto, int>>();
             foreach (var indice in carrinho)
             {
-                var produto = _context.Produtos.ToList()[indice]; // Busca o produto pelo índice
-                produtosNoCarrinho.Add(produto);
+                var produto = _context.Produtos.ToList()[indice];
+                produtosNoCarrinho.Add(Tuple.Create(produto, indice));
             }
 
             var usuarioLogado = await _context.Usuarios.FirstOrDefaultAsync(u => u.Nome == User.Identity.Name);
 
-            var model = new Tuple<List<Produto>, Usuario>(produtosNoCarrinho, usuarioLogado);
+            var viewModel = new CarrinhoViewModel
+            {
+                ProdutosComIndices = produtosNoCarrinho,
+                Usuario = usuarioLogado
+            };
 
-            return View(model);
+            return View(viewModel);
         }
+
 
         public IActionResult AdicionarAoCarrinho(int indice)
         {
@@ -190,14 +201,14 @@ namespace Puc.Controllers
 
             return RedirectToAction(nameof(List));
         }
-        public IActionResult RemoverDoCarrinho(int produtoId)
+        public IActionResult RemoverDoCarrinho(int indice)
         {
             var carrinho = HttpContext.Session.Get<List<int>>("Carrinho") ?? new List<int>();
 
-            // Verifica se o produtoId está presente no carrinho e remove se encontrado
-            if (carrinho.Contains(produtoId))
+            // Verifica se o índice está dentro do intervalo do carrinho e remove se encontrado
+            if (indice >= 0 && indice < carrinho.Count)
             {
-                carrinho.Remove(produtoId);
+                carrinho.RemoveAt(indice);
                 HttpContext.Session.Set("Carrinho", carrinho);
             }
 
