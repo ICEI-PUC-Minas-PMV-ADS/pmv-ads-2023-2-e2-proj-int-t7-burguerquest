@@ -7,7 +7,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 Os testes funcionais realizados no site são descritos na seguinte planilha https://sgapucminasbr-my.sharepoint.com/:x:/g/personal/1454955_sga_pucminas_br/EW5dHb9CsdtOj540XjB8FwkBVWNyjD-BRTTG1FyhalEkaQ?e=mw9kSG&nav=MTVfezAwMDAwMDAwLTAwMDEtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMH0
 e dispostas abaixo:
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/blob/e23fde91551f38eb1168d5a8b0211fd52f6a4386/docs/img/registro%20de%20testes%20de%20softer.pdf)
+![image](docs/img/registro de testes de softer.pdf)
 
 ## Avaliação
 
