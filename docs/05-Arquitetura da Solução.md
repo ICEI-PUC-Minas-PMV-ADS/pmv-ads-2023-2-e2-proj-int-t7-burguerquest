@@ -1,8 +1,8 @@
 # Arquitetura da Solução
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
-
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+A aplicação web da Burguequest, uma hamburgueria virtual, foi desenvolvida com uma arquitetura moderna e escalável para garantir uma experiência eficiente aos usuários. A estrutura de software é composta por diversos componentes, tanto na camada de frontend quanto na de backend, integrados de forma a proporcionar funcionalidades avançadas e uma interface amigável. Além disso, o ambiente de hospedagem é configurado para garantir desempenho e segurança.
+A aplicação Burguequest é hospedada em uma infraestrutura de nuvem a Azure, para garantir escalabilidade e alta disponibilidade. 
 
 ## Diagrama de Classes
 
