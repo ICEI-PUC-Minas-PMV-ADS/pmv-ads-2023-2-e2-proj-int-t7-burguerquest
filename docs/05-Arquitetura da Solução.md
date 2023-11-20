@@ -5,6 +5,8 @@ A aplicação Burguequest é hospedada em uma infraestrutura de nuvem a Azure, p
 
 ## Diagrama de Classes
 
+![UML](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/assets/104217381/d9ed0b9d-9e7b-4b54-9c2c-af587c5d4acb)
+
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
