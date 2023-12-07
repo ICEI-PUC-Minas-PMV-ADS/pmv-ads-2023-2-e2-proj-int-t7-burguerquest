@@ -5,43 +5,68 @@
     <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="css/home.css" asp-append-version="true" />
 </head>
-<body>
-    <!-- Restante do seu conteúdo HTML -->
+<body class="home-page">
+    <header class="header">
+    </header>
+
     <div class="text-center">
-        <h1 class="display-4">BurguerQuest </h1>
-        <p class="lead">O lugar perfeito para os amantes de animes e bons hamburguers!</p>
+        <h1 class="display-4">BurguerQuest</h1>
+        <p class="lead">
+            ‘Anime seus sentidos
+            com os sabores únicos da
+            Burguer Quest!’
+        </p>
 
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <p>Nossos hamburguers são inspirados nos personagens e mundos dos seus animes favoritos.</p>
-                <p>Desfrute de uma experiência única que combina a cultura anime com deliciosos sabores.</p>
             </div>
         </div>
-        <img src="imagens/personagem_home.png" alt="Descrição da Imagem">
-        <!-- Adicionando a classe de destaque à frase -->
+
+        <!-- Adicione um contêiner para as imagens -->
+        <div class="image-container">
+            <div class="row">
+                <!-- Primeira fileira de imagens -->
+                <div class="col-md-4">
+                    <img src="imagens/hunterxhunter.jpg" alt="hunterxhunter">
+                </div>
+                <div class="col-md-4">
+                    <img src="imagens/naruto.jpg" alt="kimetsu">
+                </div>
+                <div class="col-md-4">
+                    <img src="imagens/one-piece-.jpg" alt="Descrição da Imagem 3">
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Segunda fileira de imagens -->
+                <div class="col-md-4">
+                    <img src="imagens/kimetsu-no-aiba.jpg" alt="Descrição da Imagem 4">
+                </div>
+                <div class="col-md-4">
+                    <img src="imagens/pokemon.jpg" alt="Descrição da Imagem 5">
+                </div>
+                <div class="col-md-4">
+                    <img src="imagens/jujutsu.jpg" alt="Descrição da Imagem 6">
+                </div>
+            </div>
+        </div>
+
+        <div class="additional-space"></div>
+
+        <!-- Frase Temática -->
+        <div class="col-md-12 text-center">
+            <p class="thematic-text">Experimente a comida favorita do seu anime preferido!”.</p>
+        </div>
+
+        <!-- Última imagem com nova classe para ajustes específicos -->
+        <div class="col-md-12 text-center">
+            <img src="~/Imagens/batatatelahome.png" alt="Descrição da Imagem" class="last-image">
+        </div>
+
         <p class="mt-5 highlighted-text">Faça seu pedido agora e embarque nesta jornada gastronômica!</p>
-    </div>
 
-    <div class="footer">
-        <div class="footer-column">
-            <h2 class="display-5">Informações de Contato</h2>
-            <address>
-                Endereço: Rua da Imaginação, 123 - Animeville
-            </address>
-            <p>Telefone: (11) 1234-5678 / (11) 9876-5432</p>
-        </div>
-
-        <div class="footer-column">
-            <h2 class="display-5">E-mail</h2>
-            <p>contato@burguerquest.com</p>
-        </div>
-
-        <div class="footer-column">
-            <h2 class="display-5">Horário de Funcionamento</h2>
-            <p>Qui à Dom - 17h às 23:30</p>
-        </div>
-
-        <p>&copy; 2023 BurguerQuest. Todos os direitos reservados. <a href="#">Privacy</a></p>
+        <!-- Botão de pedido -->
+        <a href="~/Usuarios/Login" class="order-button">Faça seu pedido</a>
     </div>
 </body>
 </html>

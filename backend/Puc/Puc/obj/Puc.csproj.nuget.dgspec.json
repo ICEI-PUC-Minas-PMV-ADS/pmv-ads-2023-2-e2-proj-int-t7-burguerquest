@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aleander\\Desktop\\Projeto\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\Puc.csproj": {}
+    "C:\\Users\\bianc\\OneDrive\\Área de Trabalho\\Projetos\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\Puc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aleander\\Desktop\\Projeto\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\Puc.csproj": {
+    "C:\\Users\\bianc\\OneDrive\\Área de Trabalho\\Projetos\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\Puc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aleander\\Desktop\\Projeto\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\Puc.csproj",
+        "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Área de Trabalho\\Projetos\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\Puc.csproj",
         "projectName": "Puc",
-        "projectPath": "C:\\Users\\Aleander\\Desktop\\Projeto\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\Puc.csproj",
-        "packagesPath": "C:\\Users\\Aleander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aleander\\Desktop\\Projeto\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\obj\\",
+        "projectPath": "C:\\Users\\bianc\\OneDrive\\Área de Trabalho\\Projetos\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\Puc.csproj",
+        "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bianc\\OneDrive\\Área de Trabalho\\Projetos\\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\\backend\\Puc\\Puc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Aleander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bianc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -116,7 +116,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

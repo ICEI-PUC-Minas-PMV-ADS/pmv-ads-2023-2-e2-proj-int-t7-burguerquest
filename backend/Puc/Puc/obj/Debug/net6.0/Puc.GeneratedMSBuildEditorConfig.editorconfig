@@ -9,97 +9,99 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Puc
 build_property.RootNamespace = Puc
-build_property.ProjectDir = C:\Users\Aleander\Desktop\Projeto\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\backend\Puc\Puc\
+build_property.ProjectDir = C:\Users\bianc\OneDrive\Área de Trabalho\Projetos\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\backend\Puc\Puc\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\Aleander\Desktop\Projeto\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\backend\Puc\Puc
+build_property.MSBuildProjectDirectory = C:\Users\bianc\OneDrive\Área de Trabalho\Projetos\pmv-ads-2023-2-e2-proj-int-t7-burguerquest\backend\Puc\Puc
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Account/Login.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Account/Register.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Home/Index.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Home/Privacy.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Carrinho.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Carrinho.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcQ2FycmluaG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Create.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Delete.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Details.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Edit.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Index.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/List.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Produtos/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Shared/Error.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Create.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Delete.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Details.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Edit.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Index.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Login.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Usuarios/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/_ViewImports.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/_ViewStart.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aleander/Desktop/Projeto/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Shared/_Layout.cshtml]
+[C:/Users/bianc/OneDrive/Área de Trabalho/Projetos/pmv-ads-2023-2-e2-proj-int-t7-burguerquest/backend/Puc/Puc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-68ka5s15qy

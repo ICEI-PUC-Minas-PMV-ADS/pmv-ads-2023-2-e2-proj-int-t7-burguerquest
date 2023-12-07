@@ -1,81 +1,105 @@
-﻿/* home.css */
-
+﻿/* Estilos gerais */
 body {
-    background-color: #f8f8f8;
+    background-color: #FFFACD;
     color: #333;
     font-family: 'Arial', sans-serif;
 }
 
-.text-center {
-    margin: 50px auto;
-    padding: 20px;
-    max-width: 800px;
-}
-
-.display-4 {
-    color: #ff9933;
-}
-
-.lead {
-    font-style: italic;
-}
-
-.row {
-    margin-top: 20px;
-}
-
-.mt-5 {
-    margin-top: 30px;
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
     text-shadow: 2px 2px 5px #333;
 }
 
+/* Estilo para a seção de texto centralizado */
+.text-center {
+    text-align: center;
+    margin: 70px auto;
+    padding: 50px;
+    max-width: 960px;
+}
+
+/* Estilo para a exibição de texto grande */
+.display-4 {
+    color: #ff9933;
+}
+
+/* Estilo para a seção de texto em itálico */
+.lead {
+    font-style: italic;
+    color: #555;
+    font-size: 40px;
+    padding: 50px;
+}
+
+/* Estilo para as linhas na página */
+.row {
+    margin-top: 50px;
+}
+
+/* Espaçamento superior adicional */
+.mt-5 {
+    margin-top: 30px;
+}
+
+/* Estilo para a seta antes do texto em itálico */
 .lead::before {
-    content: '\00BB'; /* Adiciona uma seta na frente do texto */
+    content: '\00BB';
     margin-right: 5px;
 }
 
-/* Estilo do rodapé */
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #f8f9fa; /* Cor de fundo para a faixa no rodapé */
-    padding: 5px; /* Ajusta o padding da faixa no rodapé */
-    text-align: left; /* Alinha o texto à esquerda */
-    font-size: 70%; /* Tamanho da fonte reduzido para 70% do tamanho original */
-    display: flex; /* Usa o modelo de layout flexível */
-    justify-content: space-between; /* Distribui o espaço entre os elementos */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
+/* Estilo específico para a página home */
+.image-container {
+    margin-top: 10px;
+    background-color: #F4A460;
+    padding: 30px;
+    border-radius: 10px;
 }
 
-    .footer h2 {
-        font-size: 80%; /* Tamanho da fonte para os títulos h2 dentro do rodapé */
-        margin-bottom: 5px; /* Reduz o espaço abaixo dos títulos */
+    .image-container img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+        margin-bottom: 10px;
     }
 
-.footer-column {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 15px; /* Adiciona um pequeno espaço entre as colunas */
-}
+    /* Estilo para a última imagem */
+    .image-container .last-image {
+        width: 50%;
+    }
 
-/* Estilo adicional para destacar a frase no rodapé */
+/* Estilo adicional para destacar o texto na home */
 .highlighted-text {
-    font-size: 120%; /* Aumenta o tamanho da fonte para destacar */
-    font-weight: bold; /* Torna o texto em negrito para maior destaque */
-    color: #e44d26; /* Cor de destaque - você pode ajustar conforme necessário */
-    margin-bottom: 5px; /* Reduz o espaço abaixo da frase destacada */
+    font-size: 3em;
+    font-weight: bold;
+    color: #e44d26;
+    margin-bottom: 50px;
 }
 
-/* Adicione mais estilos conforme necessário */
+/* Estilo para a frase temática */
+.thematic-text {
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 50px;
+}
+
+/* Estilos adicionais para o botão de ordem */
+.order-button {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #e44d26; /* Cor laranja */
+    color: #000; /* Cor do texto preto */
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+    .order-button:hover {
+        background-color: #ff9933; /* Cor laranja mais clara no hover */
+        color: #000; /* Cor do texto preto no hover */
+    }
